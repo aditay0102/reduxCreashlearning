@@ -1,14 +1,18 @@
 import { useState } from 'react'
-
 import './App.css'
+
+import AddTodo from './components/AddTodo.jsx'
+import Todo from './components/Todo.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      Simplel redux
-    </>
+    <div>
+      Learning redux
+      <AddTodo/>
+      <Todo/>
+    </div>
   )
 }
 
